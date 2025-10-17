@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #222020; /* Fondo principal negro */
+    color: white; /* Color de texto por defecto */
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*--------------------------------------Header de la Página--------------------------------------*/
+header {
+    background-color: #1a1919; /* Un negro ligeramente más claro que el body */
+    color: white;
+    text-align: center;
+    padding: 60px 20px 30px;
+    border-bottom: 5px solid #a70a07; /* Línea roja de acento */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #bebebe;
+}
+
+/*--------------------------------------Section 4 - Contactos Sociales--------------------------------------*/
+.section4 {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.section4 h2 {
+    color: #a70a07; /* Título en rojo */
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.section4-links-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los enlaces se envuelvan en pantallas pequeñas */
+    justify-content: center;
+    gap: 20px; /* Espacio entre los enlaces */
+}
+
+.section4 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 15px 25px;
+    border-radius: 30px;
+    display: flex; /* Para alinear texto e ícono */
+    align-items: center;
+    gap: 10px; /* Espacio entre texto e ícono */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 250px;
+    box-sizing: border-box;
+}
+
+.section4 a img {
+    width: 30px; /* Tamaño consistente para los íconos */
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Estilos específicos y hover para cada tipo de enlace */
+
+/* WhatsApp y Llamadas */
+.section4 a.whatsapp {
+    background-color: #25d366; /* Verde WhatsApp */
+}
+.section4 a.whatsapp:hover {
+    background-color: #b4a307; /* Dorado en hover */
+    color: #222020;
+    transform: scale(1.05);
+}
+
+/* Facebook */
+.section4 a.facebook {
+    background-color: #3b5998; /* Azul Facebook */
+}
+.section4 a.facebook:hover {
+    background-color: #b4a307;
+    color: #222020;
+    transform: scale(1.05);
+}
+
+/* Instagram */
+.section4 a.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+.section4 a.instagram:hover {
+    background: #b4a307;
+    color: #222020;
+    transform: scale(1.05);
+}
+
+/* Twitter (X) */
+.section4 a.twitter {
+    background-color: #000000;
+}
+.section4 a.twitter:hover {
+    background-color: #b4a307;
+    color: #222020;
+    transform: scale(1.05);
+}
+
+/* YouTube */
+.section4 a.youtube {
+    background-color: #ff0000; /* Rojo YouTube */
+}
+.section4 a.youtube:hover {
+    background-color: #b4a307;
+    color: #222020;
+    transform: scale(1.05);
+}
+
+/* Escúchanos Ahora (Botón principal) */
+.section4 a.escuchanos {
+    background-color: #a70a07; /* Rojo principal de la radio */
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: white;
+}
+.section4 a.escuchanos:hover {
+    background-color: #b4a307;
+    color: #222020;
+    box-shadow: 0 0 10px #b4a307;
+    transform: scale(1.05);
+}
+
+
+/*--------------------------------------Ubicación y Mapa--------------------------------------*/
+.map-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.map-section h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    background-color: #333;
+    border: 5px solid #a70a07;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 400px; /* Altura fija para el iframe del mapa */
+    margin-bottom: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.map-info {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.map-info p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: white;
+}
+
+.map-info p a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.map-info p a:hover {
+    color: #b4a307 !important;
+}
+
+
+/*--------------------------------------Footer----------------------------------------*/
+footer {
+    background-color: #bebebe; /* Gris claro para el footer */
+    color: black;
+    padding: 20px 0 10px;
+    text-align: center;
+}
+
+.div-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 20px;
+}
+
+.flex1, .flex2, .flex3 {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    flex-basis: 250px; /* Asegura un ancho mínimo para cada columna */
+}
+
+.flex2 {
+    background-color: white; /* Fondo blanco para la sección central del logo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.div-footer h3 {
+    color: #a70a07;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.div-footer div div img {
+    max-width: 150px;
+    height: auto;
+}
+
+.div-footer a {
+    text-decoration: none;
+    color: #222020;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.div-footer a:hover {
+    color: #b4a307;
+}
+
+footer p:last-child {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #555;
+}
+
+/* Media Query para asegurar el responsive del footer en pantallas muy pequeñas */
+@media (max-width: 550px) {
+    .div-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex1, .flex2, .flex3 {
+        flex-basis: 100%;
+        width: 90%;
+        margin: 5px 0;
+        text-align: center;
+    }
+}
